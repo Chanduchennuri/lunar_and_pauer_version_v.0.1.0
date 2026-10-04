@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Bot, Menu, X } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
+import { Cookies } from "@/components/ui/Cookies";
 
 const nav = [
   { to: "/explore" as const, label: "Explore" },
@@ -113,6 +114,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
           © 2026 Lunar & Pauer · Early ecosystem
         </div>
       </footer>
+      <Cookies />
     </div>
   );
 }
